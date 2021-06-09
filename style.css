@@ -1,0 +1,747 @@
+:root
+{
+	--main_test_bg: red;
+	
+	/* adobe photoshop */
+	
+	--adobe_dark_bg: #282828;
+	--adobe_lighter_bg: #424242;
+	--adobe_bright_bg: #535353;
+	
+	--tf2_dark_bg: #1e1e20;
+	--tf2_lighter_bg: #2a2c2b;
+	--tf2_light_bg: #384140;
+	--tf2_biege: #d8caa0;
+	--tf2_red: #d9372c;
+	
+	--default_marker: #2e0a27;
+	--marker_hlight: #973985;
+	--marker_hlight_v2: #43203c;
+	
+	--hlight_sadow: #f3ffe3;
+	
+	/* blues */
+	--dark_blue: #161a3b;
+	--lighter_blue: #37498a;
+	--midblue: #507cc4;
+	--light_blue: #507cc4;
+	--sky_blue: #aed5f6;
+	
+	--tf2_blu: #385c78;
+	
+	--minecraft_slime: #97c83c;
+	
+	--minecraft_slime_dev_full: rgba(151, 200, 60, 1);
+	--minecraft_slime_dev_none: rgba(151, 200, 60, 0);
+	
+	--ultrabiege: #f2eac8;
+	
+	--dim_40perc: linear-gradient(0deg, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100%);
+	--dim_20perc: linear-gradient(0deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.2) 100%);
+	
+	--footer: #101010;
+}
+
+
+@keyframes info_card_showup
+{
+	from 
+	{
+		opacity: 0;
+		transform: translateX(-10px);
+	}
+	to 
+	{
+		opacity: 1;
+		transform: translateX(0px);
+	}
+}
+
+@keyframes info_card_hide
+{
+	from 
+	{
+		opacity: 1;
+	}
+	to 
+	{
+		opacity: 0;
+	}
+}
+
+
+@keyframes image_card_showup
+{
+	from 
+	{
+		opacity: 0;
+		transform: translateY(-10px);
+	}
+	to 
+	{
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}
+.image_card_showup_class
+{
+	animation-fill-mode: forwards;
+	animation-delay: 0.1s;
+	animation-name: image_card_showup;
+	animation-duration: 0.25s;
+}
+
+
+
+
+@keyframes rside_card
+{
+	from 
+	{
+		opacity: 0;
+		transform: translateX(-100%);
+	}
+	to 
+	{
+		opacity: 1;
+		transform: translateX(0%);
+	}
+}
+
+.rside_card_slidein
+{
+	animation-fill-mode: forwards;
+	animation-name: rside_card;
+	animation-duration: 0.75s;
+}
+
+@keyframes overlay_imgs
+{
+	from 
+	{
+		opacity: 0;
+		transform: translateY(20px);
+	}
+	to 
+	{
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}
+
+.overlay_img_anim1
+{
+	animation-delay: 0.5s;
+	animation-fill-mode: forwards;
+	animation-name: overlay_imgs;
+	animation-duration: 0.75s;
+}
+
+
+.overlay_img_anim2
+{
+	animation-delay: 0.6s;
+	animation-fill-mode: forwards;
+	animation-name: overlay_imgs;
+	animation-duration: 0.75s;
+}
+
+
+.overlay_img_anim3
+{
+	animation-delay: 0.7s;
+	animation-fill-mode: forwards;
+	animation-name: overlay_imgs;
+	animation-duration: 0.75s;
+}
+
+.overlay_img_anim4
+{
+	animation-delay: 0.8s;
+	animation-fill-mode: forwards;
+	animation-name: overlay_imgs;
+	animation-duration: 0.75s;
+}
+
+
+
+.element_hidden
+{
+	display: none !important;
+}
+
+.element_noselect
+{
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	pointer-events: none;
+}
+
+.notext
+{
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+
+*
+{
+	padding: 0px;
+	margin: 0px;
+}
+.google_img
+{
+  display: flex;
+  height: 200px;
+  background-image: url('https://cdn.discordapp.com/attachments/816291862457483285/850781051444789304/super_map2.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+body
+{
+	displays: flex;
+	background: black;
+}
+
+html{
+	background: black;
+}
+
+.info_page
+{
+	transition: 0.2s;
+	width: 100%;
+	height: 100%;
+	background: black;
+	color: white;
+	font-family: 'Roboto';
+	filter: blur(0px);
+}
+
+.top_welcome
+{
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	background: gray;
+	background-image: url('https://lh3.googleusercontent.com/p/AF1QipPLBzhd70y_-R9cXEobfkdj8PWOV1SPQFfgwTwf=s0');
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	background-attachment: fixed;
+}
+
+.top_welcome_text
+{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 9vw;
+	text-shadow: 2px 2px 7px #000000;
+	background: linear-gradient(0deg, rgba(0,0,0,0.742734593837535) 0%, rgba(0,0,0,0) 20%), linear-gradient(0deg, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100%);
+}
+
+.bottom_page
+{
+	display: flex;
+	background: var(--tf2_dark_bg);
+	flex-direction: column;
+}
+
+.bottom_page_intro
+{
+	display: flex;
+	width: 100%;
+	backgroundd: rgba(50, 50, 100, 0.1);
+}
+
+.bottom_page_left_card
+{
+	display: flex;
+	widths: 50%;
+	backgroundd: gray;
+}
+
+.intro_card
+{
+	font-size: 18px;
+	background: var(--adobe_dark_bg);
+	display: flex;
+	width: 290px;
+	margin: 60px;
+	margin-left: 100px;
+	padding: 10px;
+	flex-direction: column;
+	border-radius: 7px;
+	font-weight: 300;
+	
+	-webkit-box-shadow: 0px 10px 13px -7px #000000, 3px 3px 4px 0px #000000; 
+	box-shadow: 0px 10px 13px -7px #000000, 3px 3px 4px 0px #000000;
+	
+	/*
+	-webkit-box-shadow: 0px 10px 13px -7px #000000, -3px 3px 4px 0px rgba(0,0,0,0.95); 
+	box-shadow: 0px 10px 13px -7px #000000, -3px 3px 4px 0px rgba(0,0,0,0.95);
+	*/
+}
+
+.intro_card_header
+{
+	font-weight: 400;
+	font-size: 35px;
+}
+
+.bottom_page_nav
+{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 100px;
+}
+
+.bottom_page_cards
+{
+	width: 40%;
+	backgroundd: purple;
+}
+
+
+.bottom_page_map
+{
+	display: flex;
+	width: 50%;
+	backgroundd: blue;
+	position: relative;
+	justify-content: center;
+}
+
+.responsive_map
+{
+	display: flex;
+	flex-direction: column;
+	width: 90%;
+	height: 600px;
+	backgroundd: coral;
+	position: sticky;
+	
+	margin: 50px 0px 0px 0px;
+	top: 26vh;
+}
+
+.map_canvas
+{
+	display: flex;
+	width: 100%;
+	height: 100%;
+	background-image: url("https://cdn.discordapp.com/attachments/816291862457483285/850781051444789304/super_map2.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: top;
+}
+
+.fitter
+{
+	top: 0px;
+	width: 100%;
+	
+	object-fits: contain;
+}
+
+#shit
+{
+	position: absolute;
+	align-self: center;
+}
+
+/*
+.marker
+{
+	position: absolute;
+	margin: 0px 0px 0px 0px;
+	width: 13vw;
+	height: 350px;
+	background: red;
+	left: 1px;
+	top: 1px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	min-width: 200px;
+	max-width: 300px;
+}
+
+.marker_top_part
+{
+	flex-grow: 1;
+	background: green;
+	display: flex;
+}
+
+.marker_bottom_part
+{
+	height: 15%;
+	width: 100%;
+	background: cyan;
+	display: flex;
+	justify-content: center;
+}
+
+.marker_bottom_part svg
+{
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+	display: flex;
+	justify-content: center;
+}
+
+.svg_hitbox:hover
+{
+	fill: red;
+}
+
+
+.marker_top_part
+{
+	background-image: url("https://lh3.googleusercontent.com/p/AF1QipOhIna7AD2Ub-Xww5_vPna1AlCJCkkpJHPw4uB0=s0");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+*/
+
+svg
+{
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	pointer-events: none;
+}
+
+
+.marker
+{
+	position: absolute;
+	width: 30px;
+	height: 30px;
+}
+
+.marker svg
+{
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+	display: flex;
+	justify-content: center;
+	fill: var(--default_marker);
+}
+
+.svg_hitbox:hover svg
+{
+	fill: var(--marker_hlight);
+}
+
+.building_template
+{
+	backgroundd: black;
+	position: absolute;
+	background-image: url("https://lh3.googleusercontent.com/p/AF1QipOhIna7AD2Ub-Xww5_vPna1AlCJCkkpJHPw4uB0=s0");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 450px;
+	height: 350px;
+	opacity: 0;
+	z-index: 999;
+}
+
+.bottom_page_info_card
+{
+	display: flex;
+	width: 81%;
+	height: 120px;
+	color: white;
+	background: var(--tf2_light_bg);
+	margin: 20px;
+	margin-left: 40px;
+	margin-right: 0px;
+	border-left: 0px solid var(--minecraft_slime_dev_none);
+	transition: 0.2s;
+}
+.bottom_page_info_card:hover{
+	border-left: 5px solid var(--minecraft_slime_dev_full);
+	transition: 0.2s;
+}
+	
+.bottom_page_info_card_js_hover
+{
+	border-left: 5px solid var(--minecraft_slime_dev_full);
+	transition: 0.2s;
+}
+
+.info_card_name_side
+{
+	display: flex;
+	height: 100%;
+	width: 70%;
+	padding-left: 10px;
+	align-items: center;
+	font-size: 1.3vw;
+	
+}
+
+.info_card_rating_side
+{
+	display: flex;
+	flex-grow: 1;
+	backgroundd: chocolate;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.info_card_rating_bar
+{
+	display: flex;
+	padding: 5px;
+	flex-grows: 1;
+	height: 28px;
+	padding-left: 10px;
+	backgroundd: navy;
+	font-size: 100%;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.info_card_rating_bar_meter
+{
+	display: flex;
+	height: 4px;
+	width: 100%;
+	background: var(--light_blue);
+	transform-origin: left;
+}
+
+.info_card_rating_bar_number
+{
+	display: flex;
+	flex-grow: 1;
+}
+
+.info_card_rating_bar_number_icon
+{
+	display: flex;
+	width: 30px;
+	align-items: center;
+	justify-content: center;
+	/* background: var(--adobe_bright_bg); 
+	border-radius: 999px; */
+}
+
+.info_card_rating_bar_number_text
+{
+	display: flex;
+	width: 100%;
+	padding-left: 5px;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.info_card_popup
+{
+	position: absolute;
+	display: flex;
+	width: 300px;
+	height: 400px;
+	background: white;
+	color: black;
+	left: 1px;
+	padding: 10px;
+	z-index: 999999;
+	border-radius: 6px;
+	opacity: 0;
+}
+
+.info_card_popup_anim
+{
+	animation-fill-mode: forwards;
+	animation-delay: 0.1s;
+	animation-name: info_card_showup;
+	animation-duration: 0.25s;
+}
+
+
+.page_footer
+{
+	display: flex;
+	flex-direction: column;
+	height: 300px;
+	background: var(--footer);
+	color: white;
+	padding: 50px;
+	align-items: flex-start;
+	justify-content: space-between;
+	
+}
+
+.fill_fixup
+{
+	fill: var(--marker_hlight) !important;
+}
+
+.madeby div
+{
+	font-weight: 300;
+}
+
+.info_card_rating_bar_number_icon svg
+{
+	width: 100%;
+	height: 100%;
+	padding: 2px;
+	fill: var(--tf2_biege);
+}
+
+.info_overlay
+{
+	display: flex;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	z-index: 9999999;
+	font-family: 'Roboto';
+	font-weight: 400;
+	background: var(--dim_40perc);
+}
+
+.info_overlay_text
+{
+	display: flex;
+	width: 50%;
+	height: 100%;
+	background: white;
+}
+
+.info_overlay_images
+{
+	display: flex;
+	flex-wrap: wrap;
+	align-content: space-evenly;
+	justify-content: center;
+}
+
+.info_overlay_image
+{
+	width: 420px;
+	height: 300px;
+	margin: 20px;
+}
+
+.info_overlay_left_part
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 80px;
+	min-width: 80px;
+}
+
+.info_overlay_right_part
+{
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+}
+
+.info_overlay_header
+{
+	font-weight: 700;
+	font-size: 30px;
+}
+
+.info_overlay_desc
+{
+	padding-top: 20px;
+}
+
+.info_overlay_image img
+{
+    max-width: 100%;
+    max-height: 100%;
+	opacity: 0%;
+}
+
+.info_overlay_image
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.bg_blur
+{
+	transition: 0.2s;
+	filter: blur(20px);
+}
+
+.info_overlay_left_part svg
+{
+	width: 90%;
+	height: 90%;
+	fill: rgba(0, 0, 0, 0.15);
+	transform: rotate(90deg);
+}
+
+.info_overlay_left_part:hover
+{
+	background: rgba(0, 0, 0, 0.07);
+}
+
+.super_filters
+{
+	display: flex;
+	height: 50px;
+	width: 20%;
+	
+	margin-left: 100px;
+	margin-top: 30px;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.super_filter
+{
+	width: 40px;
+	height: 40px;
+	background: var(--adobe_bright_bg);
+	border-radius: 9999px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 3px solid transparent;
+}
+
+.super_filter svg
+{
+	width: 70%;
+	height: 70%;
+	fill: var(--tf2_biege);
+}
+
+
+.super_filter:active
+{
+	border: 3px solid var(--minecraft_slime);
+}
