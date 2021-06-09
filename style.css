@@ -746,3 +746,15 @@ svg
 {
 	border: 3px solid var(--minecraft_slime);
 }
+
+ 
+
+@media screen and (max-width: 1488px)
+{
+	
+	.info_overlay_image
+	{
+		width: 300px;
+	}
+	
+}
