@@ -632,6 +632,7 @@ svg
 	width: 50%;
 	height: 100%;
 	background: white;
+	min-width: 495px;
 }
 
 .info_overlay_images

@@ -84,6 +84,7 @@ function supergen()
 		$(this).css({top: dot_h_result - this_height, left: dot_w_result - this_width});
 		$(this).attr('real_x', dot_w_result);
 		$(this).attr('real_y', dot_h_result);
+		$('.super_marker_preset').remove();
     });
 	
 	// $('.marker').css({top: dot_h_result, left: dot_w_result});
