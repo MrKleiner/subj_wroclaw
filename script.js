@@ -282,7 +282,7 @@ function build_citadel()
 		// de
 		
 		
-		$('.bottom_page_cards').prepend(info_card_preset_structure.replace('null_1337', temp_card_id));
+		$('.bottom_page_cards').append(info_card_preset_structure.replace('null_1337', temp_card_id));
 		var grab_linked_card = $('div[temp_card_id="' + temp_card_id + '"]');
 		// console.log($(this).attr('info_card_rating').split('-')[0]);
 

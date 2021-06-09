@@ -323,6 +323,13 @@ html{
 	backgroundd: blue;
 	position: relative;
 	justify-content: center;
+	
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
 }
 
 .responsive_map
@@ -759,7 +766,23 @@ svg
 	
 }
 
-.bottom_page_info_card:nth-last-child(2)
+.bottom_page_info_card:nth-last-child(1)
 {
 	margin-bottom: 500px;
 }
+
+
+.bottom_page_map *
+{
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+/* .info_popup_append_helper */
+/* { */
+	/* order: -1; */
+/* } */
